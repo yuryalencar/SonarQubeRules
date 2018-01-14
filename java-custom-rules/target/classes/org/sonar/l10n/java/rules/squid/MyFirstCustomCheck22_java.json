@@ -1,0 +1,14 @@
+{
+  "title": "Parâmetro de retorno deve ser diferente da saída.",
+  "type": "BUG",
+  "status": "ready",
+  "remediation": {
+    "func": "Constant\/Issue",
+    "constantCost": "5min"
+  },
+  "tags": [
+    "spring",
+    "security"
+  ],
+  "defaultSeverity": "Minor"
+}

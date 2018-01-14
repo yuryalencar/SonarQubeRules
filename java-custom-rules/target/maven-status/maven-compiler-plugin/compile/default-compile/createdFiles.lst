@@ -1,0 +1,7 @@
+org\unipampa\sonar\customrules\java\checks\br\MyFirstCustomCheck.class
+org\unipampa\sonar\customrules\java\br\RulesList.class
+org\unipampa\sonar\customrules\java\br\MyJavaRulesDefinition$RuleMetatada.class
+org\unipampa\sonar\customrules\java\br\MyJavaFileCheckRegistrar.class
+org\unipampa\sonar\customrules\java\br\MyJavaRulesDefinition$Remediation.class
+org\unipampa\sonar\customrules\java\br\MyJavaRulesPlugin.class
+org\unipampa\sonar\customrules\java\br\MyJavaRulesDefinition.class
