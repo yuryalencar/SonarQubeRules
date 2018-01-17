@@ -3,14 +3,14 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>org.sonarsource.samples</groupId>
-	<artifactId>java-custom-rules</artifactId>
-	<version>1.0-SNAPSHOT</version>
+	<groupId>org.unipampa.custom.rules</groupId>
+	<artifactId>unipampa-java-custom-rules-tests</artifactId>
+	<version>1.0-TESTES</version>
 	<packaging>sonar-plugin</packaging>
 
-	<name>SonarQube Java Custom Rules</name>
-	<description>Java Custom Rules Example for SonarQube</description>
-	<inceptionYear>2016</inceptionYear>
+	<name>UNIPAMPA - Java Custom Rules</name>
+	<description>UNIPAMPA - Java Custom Rules for Projects</description>
+	<inceptionYear>2018</inceptionYear>
 
 	<properties>
 		<sonar.version>6.3</sonar.version> <!-- this 6.3 is only required to be compliant with SonarLint and it is required 
@@ -143,8 +143,8 @@
 				<version>1.17</version>
 				<extensions>true</extensions>
 				<configuration>
-					<pluginKey>java-custom</pluginKey>
-					<pluginName>Java Custom Rules</pluginName>
+					<pluginKey>unipampa-custom</pluginKey>
+					<pluginName>UNIPAMPA - Custom Rules for Projects</pluginName>
 					<pluginClass>org.unipampa.sonar.customrules.java.br.MyJavaRulesPlugin</pluginClass>
 					<sonarLintSupported>true</sonarLintSupported>
 					<sonarQubeMinVersion>5.6</sonarQubeMinVersion> <!-- allow to depend on API 6.x but run on LTS -->
