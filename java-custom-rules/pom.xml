@@ -145,7 +145,7 @@
 				<configuration>
 					<pluginKey>java-custom</pluginKey>
 					<pluginName>Java Custom Rules</pluginName>
-					<pluginClass>org.sonar.samples.java.MyJavaRulesPlugin</pluginClass>
+					<pluginClass>org.unipampa.sonar.customrules.java.br.MyJavaRulesPlugin</pluginClass>
 					<sonarLintSupported>true</sonarLintSupported>
 					<sonarQubeMinVersion>5.6</sonarQubeMinVersion> <!-- allow to depend on API 6.x but run on LTS -->
 				</configuration>

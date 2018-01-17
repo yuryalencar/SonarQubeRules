@@ -46,17 +46,24 @@ public class MyJavaRulesDefinitionTest {
         assertThat(repository.rules()).hasSize(RulesList.getChecks().size());
 
         assertRuleProperties(repository);
-        assertParameterProperties(repository);
+        //assertParameterProperties(repository);
         assertAllRuleParametersHaveDescription(repository);
     }
 
+    /**
+     * Esse método é para testar quando sua regra possui parâmetros de entrada
+     * como por exemplo nomes de métodos, classe ou até mesmo annotations que
+     * estejam presentes, como a única regra até o momento não contém parâmetros
+     * o mesmo está comentado.
+     * @param repository 
+     */
     private void assertParameterProperties(Repository repository) {
         // TooManyLinesInFunctionCheck
-        Param max = repository.rule("MyFirstCustomRule").param("name");
-        assertThat(max).isNotNull();
+        //Param max = repository.rule("MyFirstCustomRule").param("name");
+        //assertThat(max).isNotNull();
         //assertThat(max.defaultValue()).isEqualTo("Inject");
-        assertThat(max.description()).isEqualTo("Métodos que contém um único parâmetro não podem conter saída do mesmo tipo do parâmetro de entrada.");
-        assertThat(max.type()).isEqualTo(RuleParamType.STRING);
+        //assertThat(max.description()).isEqualTo("Métodos que contém um único parâmetro não podem conter saída do mesmo tipo do parâmetro de entrada.");
+        //assertThat(max.type()).isEqualTo(RuleParamType.STRING);
     }
 
     private void assertRuleProperties(Repository repository) {
