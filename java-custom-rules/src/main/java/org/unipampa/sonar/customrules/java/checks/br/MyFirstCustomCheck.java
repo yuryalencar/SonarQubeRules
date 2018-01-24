@@ -21,6 +21,7 @@ import org.sonar.plugins.java.api.semantic.Symbol.MethodSymbol;
 import org.sonar.plugins.java.api.semantic.Type;
 import org.sonar.plugins.java.api.tree.MethodTree;
 import org.sonar.plugins.java.api.tree.Tree;
+import org.unipampa.sonar.customrules.java.loggerdebug.br.LoggerDebug;
 
 @Rule(
         key = "MyFirstCustomRule",
@@ -42,6 +43,16 @@ public class MyFirstCustomCheck extends IssuableSubscriptionVisitor {
             MethodSymbol symbol = method.symbol();
             Type parameterType = symbol.parameterTypes().get(0);
             Type returnType = symbol.returnType().type();
+        
+            LoggerDebug.initializeLogger("MyFirstCustomCheck.log");
+            if (LoggerDebug.DEBUG) {
+                LoggerDebug.LOGGER.info("Starting Method VisitNode");
+            }
+            if (LoggerDebug.DEBUG) {
+                LoggerDebug.LOGGER.info("Usando name: " + parameterType.name());
+                LoggerDebug.LOGGER.info("Usando FullyQualifiedName: " + parameterType.fullyQualifiedName());
+            }
+            
             if (returnType.is(parameterType.fullyQualifiedName())) {
                 reportIssue(method.simpleName(), "Erro encontrado: Parâmetro de entrada igual ao retorno!");
             }
