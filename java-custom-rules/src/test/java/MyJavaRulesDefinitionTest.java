@@ -1,23 +1,3 @@
-/*
- * SonarQube Java Custom Rules Example
- * Copyright (C) 2016-2016 SonarSource SA
- * mailto:contact AT sonarsource DOT com
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU Lesser General Public
- * License as published by the Free Software Foundation; either
- * version 3 of the License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- * Lesser General Public License for more details.
- *
- * You should have received a copy of the GNU Lesser General Public License
- * along with this program; if not, write to the Free Software Foundation,
- * Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
- */
-
 import java.util.List;
 import static org.fest.assertions.Assertions.assertThat;
 
@@ -51,10 +31,10 @@ public class MyJavaRulesDefinitionTest {
     }
 
     /**
-     * Esse método é para testar quando sua regra possui parâmetros de entrada
-     * como por exemplo nomes de métodos, classe ou até mesmo annotations que
-     * estejam presentes, como a única regra até o momento não contém parâmetros
-     * o mesmo está comentado.
+     * Esse mï¿½todo ï¿½ para testar quando sua regra possui parï¿½metros de entrada
+     * como por exemplo nomes de mï¿½todos, classe ou atï¿½ mesmo annotations que
+     * estejam presentes, como a ï¿½nica regra atï¿½ o momento nï¿½o contï¿½m parï¿½metros
+     * o mesmo estï¿½ comentado.
      * @param repository 
      */
     private void assertParameterProperties(Repository repository) {
@@ -62,14 +42,14 @@ public class MyJavaRulesDefinitionTest {
         //Param max = repository.rule("MyFirstCustomRule").param("name");
         //assertThat(max).isNotNull();
         //assertThat(max.defaultValue()).isEqualTo("Inject");
-        //assertThat(max.description()).isEqualTo("Métodos que contém um único parâmetro não podem conter saída do mesmo tipo do parâmetro de entrada.");
+        //assertThat(max.description()).isEqualTo("Mï¿½todos que contï¿½m um ï¿½nico parï¿½metro nï¿½o podem conter saï¿½da do mesmo tipo do parï¿½metro de entrada.");
         //assertThat(max.type()).isEqualTo(RuleParamType.STRING);
     }
 
     private void assertRuleProperties(Repository repository) {
         Rule rule = repository.rule("MyFirstCustomRule");
         assertThat(rule).isNotNull();
-        assertThat(rule.name()).isEqualTo("Parâmetro de retorno deve ser diferente da saída.");
+        assertThat(rule.name()).isEqualTo("Parï¿½metro de retorno deve ser diferente da saï¿½da.");
         //assertThat(rule.debtRemediationFunction().type()).isEqualTo(Type.CONSTANT_ISSUE);
         assertThat(rule.type()).isEqualTo(RuleType.BUG);
     }
