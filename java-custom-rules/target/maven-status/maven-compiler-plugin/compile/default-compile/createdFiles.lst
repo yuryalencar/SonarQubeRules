@@ -1,3 +1,4 @@
+org\unipampa\sonar\customrules\java\checks\br\LackOfEncapsulation.class
 org\unipampa\sonar\customrules\java\checks\br\MyFirstCustomCheck.class
 org\unipampa\sonar\customrules\java\br\RulesList.class
 org\unipampa\sonar\customrules\java\loggerdebug\br\LoggerDebug.class

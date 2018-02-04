@@ -7,7 +7,7 @@ package org.unipampa.sonar.customrules.java.checks.br;
 
 /**
  *
- * @author YURY
+ * @author Yury Alencar Lima
  */
 import com.google.common.collect.ImmutableList;
 
@@ -26,7 +26,7 @@ import org.unipampa.sonar.customrules.java.loggerdebug.br.LoggerDebug;
 @Rule(
         key = "MyFirstCustomRule",
         name = "Parâmetro de retorno deve ser diferente da saída.",
-        description = "Métodos que contém um único parâmetro não podem conter saída do mesmo tipo do parâmetro de entrada.",
+        description = "Métodos que contém um único parâmetro nãoo podem conter saída do mesmo tipo do parâmetro de entrada.",
         priority = Priority.CRITICAL,
         tags = {"bug"})
 public class MyFirstCustomCheck extends IssuableSubscriptionVisitor {
@@ -44,14 +44,14 @@ public class MyFirstCustomCheck extends IssuableSubscriptionVisitor {
             Type parameterType = symbol.parameterTypes().get(0);
             Type returnType = symbol.returnType().type();
         
-            LoggerDebug.initializeLogger("MyFirstCustomCheck.log");
-            if (LoggerDebug.DEBUG) {
-                LoggerDebug.LOGGER.info("Starting Method VisitNode");
-            }
-            if (LoggerDebug.DEBUG) {
-                LoggerDebug.LOGGER.info("Usando name: " + parameterType.name());
-                LoggerDebug.LOGGER.info("Usando FullyQualifiedName: " + parameterType.fullyQualifiedName());
-            }
+//            LoggerDebug.initializeLogger("MyFirstCustomCheck.log");
+//            if (LoggerDebug.DEBUG) {
+//                LoggerDebug.LOGGER.info("Starting Method VisitNode");
+//            }
+//            if (LoggerDebug.DEBUG) {
+//                LoggerDebug.LOGGER.info("Usando name: " + parameterType.name());
+//                LoggerDebug.LOGGER.info("Usando FullyQualifiedName: " + parameterType.fullyQualifiedName());
+//            }
             
             if (returnType.is(parameterType.fullyQualifiedName())) {
                 reportIssue(method.simpleName(), "Erro encontrado: Parâmetro de entrada igual ao retorno!");

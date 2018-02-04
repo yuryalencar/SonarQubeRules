@@ -1,2 +1,3 @@
 MyJavaRulesDefinitionTest.class
 org\unipampa\sonar\customrules\java\checks\br\MyFirstCustomCheckTest.class
+org\unipampa\sonar\customrules\java\checks\br\LackOfEncapsulationTest.class

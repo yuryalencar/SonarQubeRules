@@ -49,7 +49,7 @@ public class MyJavaRulesDefinitionTest {
     private void assertRuleProperties(Repository repository) {
         Rule rule = repository.rule("MyFirstCustomRule");
         assertThat(rule).isNotNull();
-        assertThat(rule.name()).isEqualTo("Parï¿½metro de retorno deve ser diferente da saï¿½da.");
+        assertThat(rule.name()).isEqualTo("Parâmetro de retorno deve ser diferente da saída.");
         //assertThat(rule.debtRemediationFunction().type()).isEqualTo(Type.CONSTANT_ISSUE);
         assertThat(rule.type()).isEqualTo(RuleType.BUG);
     }

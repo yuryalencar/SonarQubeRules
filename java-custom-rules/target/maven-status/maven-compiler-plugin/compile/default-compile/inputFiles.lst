@@ -3,4 +3,5 @@ C:\Users\YURY\Documents\Engenharia de Software\Projeto de Pesquisa\SonarQubeRule
 C:\Users\YURY\Documents\Engenharia de Software\Projeto de Pesquisa\SonarQubeRules\java-custom-rules\src\main\java\org\unipampa\sonar\customrules\java\br\MyJavaFileCheckRegistrar.java
 C:\Users\YURY\Documents\Engenharia de Software\Projeto de Pesquisa\SonarQubeRules\java-custom-rules\src\main\java\org\unipampa\sonar\customrules\java\br\MyJavaRulesDefinition.java
 C:\Users\YURY\Documents\Engenharia de Software\Projeto de Pesquisa\SonarQubeRules\java-custom-rules\src\main\java\org\unipampa\sonar\customrules\java\checks\br\MyFirstCustomCheck.java
+C:\Users\YURY\Documents\Engenharia de Software\Projeto de Pesquisa\SonarQubeRules\java-custom-rules\src\main\java\org\unipampa\sonar\customrules\java\checks\br\LackOfEncapsulation.java
 C:\Users\YURY\Documents\Engenharia de Software\Projeto de Pesquisa\SonarQubeRules\java-custom-rules\src\main\java\org\unipampa\sonar\customrules\java\br\RulesList.java
